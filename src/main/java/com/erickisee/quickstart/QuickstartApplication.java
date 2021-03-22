@@ -52,7 +52,7 @@ public class QuickstartApplication {
 			log.info("Look up each person by name....");
 			team.stream().forEach(person -> log.info("\t"+personRepository.findByName(person.getName()).toString()));
 
-			List <Person> teammates = personRepository.findbyTeammatesName (greg.getName());
+			List <Person> teammates = personRepository.findByTeammatesName (greg.getName());
 			log.info("the following have greg as a teammate....");
 			teammates.stream().forEach(person->log.info("\t"+person.getName()));
 		};
