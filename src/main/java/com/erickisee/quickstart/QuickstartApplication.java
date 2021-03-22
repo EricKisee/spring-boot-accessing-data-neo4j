@@ -17,8 +17,9 @@ public class QuickstartApplication {
   
 	private final static Logger log = LoggerFactory.getLogger(QuickstartApplication.class);
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception{
 	SpringApplication.run(QuickstartApplication.class, args);
+	System.exit(0);
 	}
 	
 	@Bean

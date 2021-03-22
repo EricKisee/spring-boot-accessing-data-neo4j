@@ -18,7 +18,7 @@ public class Person {
 
     private String name ;
 
-    public Person(){}
+    private Person(){}
 
     public Person (String name ){
         this.name = name;
